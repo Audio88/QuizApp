@@ -2,27 +2,22 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="quizzapp.css">
-		<script src="quizzapp.js"></script>
+		<link rel="stylesheet" href="css/quizapp.css">
+		<script src="quizapp.js"></script>
 	</head>
 	<body>
 		<h1>Renissance Painting & Sculpture Quiz</h1>
-		<div class="question picture"> 
-		  <img src="http://blog.caesars.com/las-vegas//wp-content/uploads/2012/11/david1.jpg" alt="">
+		<div class="question_wrapper"> 
+		  <img id="pic" src="images/Question0.jpg" alt="">
+		  <br>
+		  <span id="question" class="aText">Who sculpted this version of david?</span>
 		</div>
-
-		<form class="answers">
-      		<span class="aText">Who sculpted this version of david?</span>
-      		<br>
-			<input type="radio" name="choices" value=0 checked><span class="aText"> Donatello</span>
-      		<br>
-			<input type="radio" name="choices" value=1><span class="aText"> Michelangelo</span>
-      		<br>
-			<input type="radio" name="choices" value=2><span class="aText"> Leonardo da Vinci</span>
-      		<br>
-			<input type="radio" name="choices" value=3><span class="aText"> Raphael</span> 
-      		<br>
-      		<input type="submit" name="choices">
+		<form id="answers">
+			<input type="radio" id="0" name="choices" value=0 type = "text"/><label id="L0" for="0"> Donatello </label><br>
+			<input type="radio" id="1" name="choices" value=1 type = "text"/><label id="L1" for="1"> Michelangelo </label><br>
+			<input type="radio" id="2" name="choices" value=2 type = "text"/><label id="L2" for="2"> Leonardo da Vinci </label><br>
+			<input type="radio" id="3" name="choices" value=3 type = "text"/><label id="L3" for="3"> Raphael </label><br>
+			<button onclick="submitf()">Submit Answer</button>
 		</form>
 	</body>
 </html>

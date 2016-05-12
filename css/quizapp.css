@@ -8,13 +8,13 @@ h1 {
 .aText {
    font-family: "Times New Roman";
 }
-.answers {
+#answers {
    width: 800px;
    margin: 0 auto;
    
 }
 
-.question {
+.question_wrapper {
   width: 800px;
   margin: 0 auto;
 }
